@@ -10,10 +10,15 @@ $(document).ready(function () {
     });
 });
 
-$("#prev").click(function () {
-    owl.trigger("owl.prev");
+
+$('.mobile-btn').on('click',  function() {
+    $('.mobile-btn').toggleClass('show-mobile-btn');
+    $('.header-menu').toggleClass('show-menu');
+    $('.header-link').toggleClass('show-header-link')
 });
 
-$("#next").click(function () {
-    owl.trigger("owl.next");
+$('.header-menu a').on('click',  function() {
+    $('.mobile-btn').removeClass('show-mobile-btn');
+    $('.header-menu').removeClass('show-menu');
+    $('.header-link').removeClass('show-header-link')
 });
