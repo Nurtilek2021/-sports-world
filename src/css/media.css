@@ -36,6 +36,7 @@
         top: 0;
         right: -100%;
         z-index: 11;
+        /*animation: ;*/
         transition: .7s;
     }
 
