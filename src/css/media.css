@@ -23,6 +23,12 @@
         transform: rotate(-45deg);
     }
 
+    span {
+        font-size: 32px;
+        color: #4D5559;
+        transform: rotate(0deg);
+    }
+
     .header-menu {
         display: flex;
         flex-direction: column;
@@ -542,11 +548,7 @@
         transform: rotate(-45.15deg);
     }
 
-    span {
-        font-size: 32px;
-        color: #4D5559;
-        transform: rotate(0deg);
-    }
+
 
     .change-content-title {
         font-style: normal;
