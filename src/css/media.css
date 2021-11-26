@@ -16,11 +16,11 @@
     }
 
     .show-mobile-btn span::before {
-        transform: rotate(5deg);
+        transform: rotate(45deg);
     }
 
     .show-mobile-btn span::after {
-        transform: rotate(-95deg);
+        transform: rotate(-45deg);
     }
 
     .header-menu {
@@ -29,17 +29,30 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        background: rgb(34, 193, 195);
-        background: linear-gradient(0deg, rgb(63, 194, 195) 0%, rgb(237, 98, 103) 59%);
+        background: linear-gradient(-45deg, #d55c00
+        , #2fffff);
+        background-size: 200% 200%;
         height: 100%;
         width: 100%;
         top: 0;
         right: -100%;
         z-index: 11;
-        /*animation: ;*/
+        animation: gradient 5s ease infinite;
         transition: .7s;
     }
 
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+
+    }
     .show-menu {
         right: 0;
     }
@@ -52,7 +65,10 @@
         width: 185px;
         text-align: center;
         border-radius: 8px;
+        color: black;
+        transition: 1s;
     }
+
 
     .show-header-link:after {
         background: black;
@@ -529,7 +545,7 @@
     span {
         font-size: 32px;
         color: #4D5559;
-        transform: rotate(45deg);
+        transform: rotate(0deg);
     }
 
     .change-content-title {

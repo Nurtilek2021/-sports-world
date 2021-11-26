@@ -984,6 +984,7 @@ a {
     height: 100%;
     background: #000000;
     transition: .6s;
+
 }
 
 .mobile-btn-span::before {
